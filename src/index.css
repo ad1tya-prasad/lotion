@@ -149,10 +149,6 @@ main {
   overflow-wrap: break-word;
 }
 
-
-
-
-/* Note */
 .note {
   display: flex;
   flex-direction: column;
