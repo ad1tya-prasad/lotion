@@ -168,8 +168,6 @@ main {
   max-height: 100%;
 }
 
-
-/* Note title and info */
 .note-header {
   display: flex;
   justify-content: space-between;
