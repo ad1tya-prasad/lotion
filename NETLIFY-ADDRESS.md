@@ -1,3 +1,3 @@
 Drop your Netlify application address here.
 
-[](ad1tya-prasad-lotion.netlify.app)
+[Netlify Address](ad1tya-prasad-lotion.netlify.app)
