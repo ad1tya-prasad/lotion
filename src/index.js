@@ -1,14 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import NullSelection from './NullSelection';
+import Layout from './Layout';
+import Note from './Note';
+import Saved from './Saved';
+
+if (localStorage.getItem("noteList") == null) {
+  localStorage.setItem("noteList", JSON.stringify([]));
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Navigate to="/notes"/>}></Route>
+            <Route path="/notes" element={<NullSelection />}></Route>
+            <Route path="/notes/:noteNumber" element={<Saved />}></Route>
+            <Route path="/notes/:noteNumber/edit" element={<Note />}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
