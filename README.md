@@ -1,19 +1,3 @@
-# Lotion
-In this assignment, you will create a Notion-like application named Lotion with HTML, CSS, and React.
-
----
-
-## :foot: Steps
-- Clone the repo
-- Make sure you're inside the root directory of the repo and then run `npm install` to install all the necessary packages
-- Run `npm start` and you should be able to see the page open up on your default browser
-- Make sure to see the demo video on D2L
-- Make your changes and push to the `main` branch before the deadline to be graded
-- Create a new repo under your username and add it as a new remote to the project: `git remote add personal <github-address>`
-- Push your changes to your personal repo as well: `git push personal main`
-- Use [Netlify](https://www.netlify.com/) to deploy your application and drop the link to your website in the [NETLIFY-ADDRESS](./NETLIFY-ADDRESS.md) file
-
----
 
 ## :page_with_curl: Notes
 - Three external libraries were used for the demo:
